@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Proxmox Backup Server backup.
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+RandomizedDelaySec=600s
+Persistent=false
+
+[Install]
+WantedBy=timers.target
